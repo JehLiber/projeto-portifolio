@@ -37,6 +37,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  position: sticky; /*posição do header fixo na hora da rolagem */
+  top: 0; /*posição do header fixo na hora da rolagem */
+  z-index: 1; /*camadas da tela(o menu do header vai sobrepor as outras camadas)*/
 }
 
 nav#menu ul{
@@ -141,7 +144,7 @@ article h2{
   border-radius: 8px;
 }
 
-.skill-container {
+#skills{
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
